@@ -1,4 +1,3 @@
-// taken from CW ballot access site https://assets.cornelwest2024.com/assets/ballot_access_map-D71PaI58.js
 (function(){try{var u=typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{},t=new Error().stack;t&&(u._sentryDebugIds=u._sentryDebugIds||{},u._sentryDebugIds[t]="22c56a2d-4a46-4a33-9fad-db8c7fd70d92",u._sentryDebugIdIdentifier="sentry-dbid-22c56a2d-4a46-4a33-9fad-db8c7fd70d92")}catch{}})();var ao=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function Gs(u){return u&&u.__esModule&&Object.prototype.hasOwnProperty.call(u,"default")?u.default:u}var Xs={exports:{}};/*!
  * jQuery JavaScript Library v3.7.1
  * https://jquery.com/
