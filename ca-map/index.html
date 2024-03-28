@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA Map</title>
-
     <script src="raphael.js"></script>
 </head>
 <body>
@@ -19,6 +18,20 @@
 
         // Sets the stroke attribute of the circle to white
         circle.attr("stroke", "#fff");
+    </script>
+    <script>
+        var el = paper.rect(10, 20, 300, 200);
+        // translate 100, 100, rotate 45°, translate -100, 0
+        el.transform("t100,100r45t-100,0");
+        // if you want you can append or prepend transformations
+        el.transform("...t50,50");
+        el.transform("s2...");
+        // or even wrap
+        el.transform("t50,50...t-50-50");
+        // to reset transformation call method with empty string
+        el.transform("");
+        // to get current value call it without parameters
+        console.log(el.transform());
     </script>
 </body>
 </html>
