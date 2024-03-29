@@ -1,6 +1,6 @@
 # CA Love Warriors
 
-`ballot-access-map` directory has code copied from [Dr. West's site]((https://www.cornelwest2024.com/petitioning_launch)).
+`ballot-access-map` directory has code copied from [Dr. West's site](https://www.cornelwest2024.com/petitioning_launch).
 
 `ca-map` has my current attempt to create a CA map.
 
