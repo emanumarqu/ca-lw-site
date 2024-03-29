@@ -9,8 +9,8 @@
         window.onload = function () {
             var R = Raphael("paper", 800, 900);
             var attr = {
-                fill: "#333",
-                stroke: "#666",
+                fill: "#11315e",
+                stroke: "#fff",
                 "stroke-width": 1,
                 "stroke-linejoin": "round"
             };
@@ -26,7 +26,7 @@
                 (function (st, state) {
                     st[0].style.cursor = "pointer";
                     st[0].onmouseover = function () {
-                        current && cali[current].animate({fill: "#333", stroke: "#666"}, 500) && (document.getElementById(current).style.display = "");
+                        current && cali[current].animate({fill: "#11315e", stroke: "#fff"}, 500) && (document.getElementById(current).style.display = "");
                         st.animate({fill: st.color, stroke: "#ccc"}, 500);
                         st.toFront();
                         // R.safari();
@@ -34,7 +34,7 @@
                         current = state;
                     };
                     st[0].onmouseout = function () {
-                        st.animate({fill: "#333", stroke: "#666"}, 500);
+                        st.animate({fill: "#11315e", stroke: "#fff"}, 500);
                         st.toFront();
                         // R.safari();
                     };
@@ -51,23 +51,23 @@
         <div id="paper"></div>
         <div id="cen">
             <h2>Central CA</h2>
-            <p></p>
+            <p>EMTPY</p>
         </div>
         <div id="bay">
             <h2>Bay Area</h2>
-            <p></p>
+            <p>EMTPY</p>
         </div>
         <div id="nor">
             <h2>Northern CA</h2>
-            <p></p>
+            <p>EMTPY</p>
         </div>
         <div id="la">
             <h2>Los Angeles</h2>
-            <p></p>
+            <p>EMTPY</p>
         </div>
         <div id="sdi">
             <h2>San Diego & Inland Empire</h2>
-            <p></p>
+            <p>EMTPY</p>
         </div>
     </div>
 </body>
