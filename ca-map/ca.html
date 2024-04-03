@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA LW Map</title>
-    <link rel="stylesheet" href="demo.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="demo-print.css" type="text/css" media="print">
     <style type="text/css" media="screen">
-        #canvas {
+       #canvas {
             height: 300px;
             left: 50%;
             margin: -150px 0 0 -300px;
@@ -21,8 +19,9 @@
             position: absolute;
             top: 0;
             width: 300px;
+            transform: scale(0.5);
         }
-        #cen, #bay, #nor, #la, #sdi {
+        #nsw, #vic, #wa, #sa, #nt, #qld, #tas {
             display: none;
             height: 400px;
             overflow: auto;
@@ -38,7 +37,7 @@
     <script src="raphael.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         window.onload = function () {
-            var R = Raphael("paper", 300, 300);
+            var R = Raphael("paper", 900, 900);
             var attr = {
                 fill: "#11315e",
                 stroke: "#fff",
