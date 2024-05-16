@@ -1,0 +1,29 @@
+<!-- HTML -->
+<div class="copyable"><figure class="highlight">Justice For All Party</figure></div>
+
+<!-- JS -->
+<script>
+    let escapeHTML = (identity) => identity;
+
+    async function setupCopyables() {
+        if (navigator.clipboard) {
+        for (const element of document.getElementsByClassName('copyable')) {
+            let text = element.innerText.trim();
+        
+            const button = document.createElement('button');
+            button.innerHTML = escapeHTML('📋');
+            button.setAttribute('aria-label', 'Copy to clipboard');
+            button.onclick = () => {
+            navigator.clipboard.writeText(text);
+            button.innerHTML = escapeHTML('✅');
+            setTimeout(() => button.innerHTML=escapeHTML('📋'), 1000);
+            }
+            element.appendChild(button);
+        }
+        }
+    }
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        setupCopyables();
+    });
+</script>
