@@ -1,4 +1,4 @@
-<div class="copyable"></div>
+<div class="copyable" role="button"></div>
 <script>
     let escapeHTML = (identity) => identity;
 
@@ -25,3 +25,47 @@
         setupCopyables();
     });
 </script>
+<style>
+    .copyable {
+        width: 100%;
+        
+        background-color: rgba(107,30,0,1);
+        border-color: rgba(255,255,255,1);
+        color: rgba(255,255,255,1);
+        font-family: Lato, sans-serif;
+        font-size: 12pt;
+        line-height: 22px;
+
+        user-select: none;
+        transition: background .2s .1s;
+        -moz-box-align: center;
+        align-items: center;
+        border: 1px solid;
+            border-top-color: currentcolor;
+            border-right-color: currentcolor;
+            border-bottom-color: currentcolor;
+            border-left-color: currentcolor;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-flex;
+        height: 36px;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        vertical-align: middle;
+        z-index: 0;
+
+        box-sizing: border-box;
+
+        --fbc-blue-60: #0060df;
+        --fbc-blue-70: #003eaa;
+        --fbc-gray-20: #ededf0;
+        --fbc-light-gray: #F0F0F4;
+        --fbc-white: #ffffff;
+        --fbc-transition: all .15s cubic-bezier(.07,.95,0,1);
+        --fbc-borders: 1px solid #ededf0;
+        --fbc-primary-text: #15141A;
+        --fbc-secondary-text: #5B5B66;
+        --fbc-font-size: 13px;
+    }
+</style>
