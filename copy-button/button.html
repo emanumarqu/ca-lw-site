@@ -1,29 +1,26 @@
-<!-- HTML -->
-<div class="copyable"><figure class="highlight">Justice For All Party</figure></div>
-
-<!-- JS -->
+<div class="copyable">Justice For All Party<!-- <button aria-label="Copy to clipboard">📋</button> --></div>
 <script>
     let escapeHTML = (identity) => identity;
 
     async function setupCopyables() {
         if (navigator.clipboard) {
-        for (const element of document.getElementsByClassName('copyable')) {
-            let text = element.innerText.trim();
-        
-            const button = document.createElement('button');
-            button.innerHTML = escapeHTML('📋');
-            button.setAttribute('aria-label', 'Copy to clipboard');
-            button.onclick = () => {
-            navigator.clipboard.writeText(text);
-            button.innerHTML = escapeHTML('✅');
-            setTimeout(() => button.innerHTML=escapeHTML('📋'), 1000);
+            for (const element of document.getElementsByClassName('copyable')) {
+                let text = element.innerText.trim();
+
+                const button = document.createElement('button');
+                button.innerHTML = escapeHTML('📋 Tap to Copy');
+                button.setAttribute('aria-label', 'Copy to clipboard');
+                button.onclick = () => {
+                    navigator.clipboard.writeText(text);
+                    button.innerHTML = escapeHTML('✅ Copied!');
+                    setTimeout(() => button.innerHTML = escapeHTML('📋 Tap to Copy'), 1000);
+                }
+                element.appendChild(button);
             }
-            element.appendChild(button);
-        }
         }
     }
-    
-    window.addEventListener("DOMContentLoaded", function() {
+
+    window.addEventListener("DOMContentLoaded", function () {
         setupCopyables();
     });
 </script>
